@@ -40,10 +40,17 @@ nav, header, main, footer {
   list-style-type: none;
 }
 
-.selector {
+.selector-type-1 {
   border: none;
   background: transparent;
-  font-size: 17px;
+  font-size: 16px;
+}
+
+.selector-type-2 {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding-right: 15px;
 }
 
 .button-type-1 {
@@ -72,24 +79,24 @@ nav, header, main, footer {
 /* end Utility Class*/
 
 /* Styling */
-.upper-nav {
+.website-nav {
   background-color: #F5F8FA;
   border-bottom: 1px solid black;
   height: 100px;
   line-height: 100px;
 }
 
-.upper-nav ul li {
+.website-nav ul li {
   display: inline-block;
 }
 
-.upper-nav .globe-img img, .upper-nav .search-img img {
+.website-nav .globe-img img, .website-nav .search-img img {
   height: 20px;
   width: 20px;
   vertical-align: -2px;
 }
 
-.upper-nav .upper-nav-left ul li:nth-child(2)::after {
+.website-nav .website-nav-left ul li:nth-child(2)::after {
   content: '';
   display: inherit;
   height: 23px;
@@ -97,7 +104,20 @@ nav, header, main, footer {
   margin: -5px 25px;
 }
 
-.upper-nav-right ul li {
+.website-nav-right ul li {
   padding-right: 20px;
 }
+
+.home-nav {
+  height: 100px;
+  line-height: 100px;
+}
+
+.home-nav-right ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+
+
 /* end Styling */
