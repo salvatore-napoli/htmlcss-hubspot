@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: #33475B;
 }
 
@@ -14,8 +15,12 @@ body {
   width: 100%;
 }
 
-.container {
+.container-type-1 {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.container-type-2 {
   margin: 0 auto;
 }
 
@@ -46,6 +51,7 @@ nav, header, main, footer {
   background: transparent;
   font-size: 16px;
   color: inherit;
+  font-weight: inherit;
 }
 
 .selector-type-2 {
@@ -54,32 +60,54 @@ nav, header, main, footer {
   font-size: 16px;
   padding-right: 15px;
   color: inherit;
+  font-weight: inherit;
 }
 
 .button-type-1 {
   background: white;
-  width: 70px;
-  height: 45px;
-  line-height: 45px;
   border: 1px solid #FF7A59;
   border-radius: 5px;
   color: #FF7A59;
   text-align: center;
-  display: inline-block;
 }
 
 .button-type-2 {
   background: #FF7A59;
-  width: 135px;
-  height: 45px;
-  line-height: 45px;
   border-radius: 5px;
   color: white;
   text-align: center;
-  display: inline-block;
 }
 
-/* end Utility Class*/
+.centered-text {
+  text-align: center;
+}
+
+.h2-style {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.h3-style {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.h4-style {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.p-style {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.description-block {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px #94A0B3, 0px 0px 2px #94A0B3 inset;
+}
+/* end Utility Class */
 
 /* Styling */
 .website-nav {
@@ -103,7 +131,7 @@ nav, header, main, footer {
   content: '';
   display: inherit;
   height: 23px;
-  border-right: 1px solid black;
+  border-right: 1px solid #33475B;
   margin: -5px 25px;
 }
 
@@ -111,21 +139,35 @@ nav, header, main, footer {
   padding-right: 20px;
 }
 
-.home-nav {
+.website-nav .website-nav-right .login-button {
+  width: 70px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+}
+
+.website-nav .website-nav-right .gethubspotfree-button {
+  width: 135px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+}
+
+header > .home-nav {
   height: 100px;
   line-height: 100px;
 }
 
-.home-nav-right ul li {
+header > .home-nav .home-nav-right ul li {
   display: inline-block;
   padding-right: 20px;
 }
 
-.jumbotron-container {
+header > .jumbotron-container {
   background-color: #FFF2EE;
 }
 
-.jumbotron-background-container {
+header > .jumbotron-container .jumbotron-background-container {
   height: 550px;
   background-image: url("../img/jumbotron.png");
   background-repeat: no-repeat;
@@ -133,7 +175,7 @@ nav, header, main, footer {
   background-size: contain;
 }
 
-.jumbotron {
+header > .jumbotron-container .jumbotron-background-container .jumbotron {
   width: 500px;
 }
 
@@ -142,27 +184,80 @@ h1 {
   padding-top: 70px;
 }
 
-.jumbotron p {
-  line-height: 30px;
-  font-weight: bold;
-}
-
-.jumbotron-button {
+header > .jumbotron-container .jumbotron-background-container .jumbotron .jumbotron-button {
   width: 190px;
   height: 65px;
   line-height: 65px;
   display: block;
 }
 
-h1, .jumbotron p, .jumbotron .jumbotron-button {
+h1, header > .jumbotron-container .jumbotron-background-container .jumbotron .jumbotron-button {
   margin-bottom: 35px;
 }
 
-.header-main-divider {
+header > .divider {
   height: 100px;
   background-color: #AFEBE4;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 
+main > .hubspot-presentation {
+  background-color: #F5F8FA;
+  height: 1200px;
+}
+
+main > .hubspot-presentation .presentation-first {
+  width: 850px;
+}
+
+main > .hubspot-presentation .presentation-first .main-presentation-img {
+  padding-top: 40px;
+}
+
+main > .hubspot-presentation .wide-block {
+  height: 350px;
+  margin-top: 50px;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-left {
+  width: 35%;
+  height: 100%;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-left-content {
+  position: relative;
+  top: 80px;
+}
+
+main > .hubspot-presentation .wide-block .learn-more-button, .main > .hubspot-presentation .wide-column .learn-more-button {
+  width: 170px;
+  height: 70px;
+  line-height: 70px;
+  margin-top: 20px;
+  position: relative;
+  left: 30%;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-right {
+  width: 55%;
+  position: relative;
+  top: 65px;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-right h4::after{
+  content: '';
+  display: inherit;
+  width: 450px;
+  border-bottom: 2px solid #33475B;
+  margin: 0 auto;
+  position: relative;
+  bottom: 12.5px;
+  left: 150px;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-right ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
 /* end Styling */
