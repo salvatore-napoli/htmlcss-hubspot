@@ -360,7 +360,7 @@ main > .hubspot-community .grid-container .grid-block-description {
 }
 
 main > .hubspot-affiliate .customers-affiliate {
-  margin: 0 auto;
+  margin: 0 auto 100px;
   width: 1050px;
 }
 
@@ -392,5 +392,32 @@ main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo img {
 
 main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo:nth-child(7n+0) img {
   width: 80%;
+}
+
+main > .hubspot-affiliate .hubspot-grow-left {
+  width: 40%;
+}
+
+main > .hubspot-affiliate .hubspot-grow-left .button-type-2 {
+  width: 200px;
+  height: 65px;
+  line-height: 65px;
+  margin-bottom: 40px;
+}
+
+main > .hubspot-affiliate .hubspot-grow-left span {
+  font-size: 15px;
+}
+
+main > .hubspot-affiliate .hubspot-grow-right {
+  width: 28.5%;
+  height: 390px;
+  position: relative;
+  bottom: 70px;
+}
+
+main > .hubspot-affiliate .hubspot-grow-right img {
+  width: 100%;
+  height: 100%;
 }
 /* end Styling */
