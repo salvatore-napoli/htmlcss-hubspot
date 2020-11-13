@@ -15,12 +15,8 @@ body {
   width: 100%;
 }
 
-.container-type-1 {
+.container {
   width: 1200px;
-  margin: 0 auto;
-}
-
-.container-type-2 {
   margin: 0 auto;
 }
 
@@ -88,9 +84,13 @@ nav, header, main, footer {
   text-align: center;
 }
 
+.white-text {
+  color: white;
+}
+
 .h2-style {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .h3-style {
@@ -210,13 +210,15 @@ header > .divider {
 
 main > .hubspot-presentation {
   background-color: #F5F8FA;
+  padding-bottom: 50px;
 }
 
-main > .hubspot-presentation .presentation-first {
+main > .hubspot-presentation .main-presentation {
   width: 850px;
+  margin: 0 auto;
 }
 
-main > .hubspot-presentation .presentation-first .main-presentation-img {
+main > .hubspot-presentation .main-presentation .main-presentation-content {
   padding-top: 40px;
 }
 
@@ -276,6 +278,7 @@ main > .hubspot-presentation .wide-column:nth-child(-n+2) {
 main > .hubspot-presentation .wide-column .wide-column-content {
   width: 78%;
   padding: 20px 0;
+  margin: 0 auto;
 }
 
 main > .hubspot-presentation .wide-column .wide-column-content img {
@@ -304,4 +307,55 @@ main > .hubspot-presentation .wide-column .wide-column-content .learn-more-butto
   display: inline-block;
 }
 
+main > .hubspot-community {
+  background-color: #00ABB7;
+  height: 850px;
+}
+
+main > .hubspot-community .container > h2 {
+  padding-top: 70px;
+  width: 1100px;
+  margin: 0 auto 40px;
+}
+
+main > .hubspot-community p {
+  width: 1180px;
+  margin: 0 auto 50px;
+}
+
+main > .hubspot-community .grid-container .grid-block {
+  width: 25%;
+}
+
+main > .hubspot-community .grid-container .grid-block:nth-child(-n+4) {
+  border-bottom: 1px solid white;
+}
+
+main > .hubspot-community .grid-container .grid-block:nth-child(n+0) {
+  border-right: 1px solid white;
+}
+
+main > .hubspot-community .grid-container .grid-block:nth-child(4n+4) {
+  border-right: none;
+}
+
+main > .hubspot-community .grid-container .grid-block img {
+  padding-top: 25px;
+}
+
+main > .hubspot-community .grid-container .grid-block h2 {
+  font-size: 40px;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+main > .hubspot-community .grid-container .grid-block span {
+  font-size: 27px;
+  vertical-align: 4px;
+  padding-left: 3px;
+}
+
+main > .hubspot-community .grid-container .grid-block-description {
+  padding-bottom: 40px;
+}
 /* end Styling */
