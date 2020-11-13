@@ -78,6 +78,12 @@ nav, header, main, footer {
   text-align: center;
 }
 
+.learn-more-button {
+  width: 180px;
+  height: 70px;
+  line-height: 70px;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -88,12 +94,12 @@ nav, header, main, footer {
 }
 
 .h3-style {
-  font-size: 23px;
+  font-size: 25px;
   margin-bottom: 30px;
 }
 
 .h4-style {
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
@@ -147,7 +153,7 @@ nav, header, main, footer {
 }
 
 .website-nav .website-nav-right .gethubspotfree-button {
-  width: 135px;
+  width: 140px;
   height: 45px;
   line-height: 45px;
   display: inline-block;
@@ -204,7 +210,6 @@ header > .divider {
 
 main > .hubspot-presentation {
   background-color: #F5F8FA;
-  height: 1200px;
 }
 
 main > .hubspot-presentation .presentation-first {
@@ -218,6 +223,7 @@ main > .hubspot-presentation .presentation-first .main-presentation-img {
 main > .hubspot-presentation .wide-block {
   height: 350px;
   margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 main > .hubspot-presentation .wide-block .wide-block-left {
@@ -230,13 +236,10 @@ main > .hubspot-presentation .wide-block .wide-block-left-content {
   top: 80px;
 }
 
-main > .hubspot-presentation .wide-block .learn-more-button, .main > .hubspot-presentation .wide-column .learn-more-button {
-  width: 170px;
-  height: 70px;
-  line-height: 70px;
-  margin-top: 20px;
+main > .hubspot-presentation .wide-block .learn-more-button {
   position: relative;
   left: 30%;
+  margin-top: 20px;
 }
 
 main > .hubspot-presentation .wide-block .wide-block-right {
@@ -260,4 +263,45 @@ main > .hubspot-presentation .wide-block .wide-block-right ul li {
   display: inline-block;
   padding-right: 10px;
 }
+
+main > .hubspot-presentation .wide-column {
+  height: 700px;
+  width: calc(100% / 3 - (50px / 3 * 2));
+}
+
+main > .hubspot-presentation .wide-column:nth-child(-n+2) {
+  margin-right: 50px;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content {
+  width: 78%;
+  padding: 20px 0;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content img {
+  margin-bottom: 15px;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content p::after {
+  content: '';
+  display: inherit;
+  width: 100%;
+  border-bottom: 2px solid #33475B;
+  margin: 60px auto 40px;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content .checked-list {
+  list-style-image: url("../img/check-orange.png");
+  text-align: left;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content .checked-list li {
+  margin-left: 30px;
+}
+
+main > .hubspot-presentation .wide-column .wide-column-content .learn-more-button {
+  margin-top: 60px;
+  display: inline-block;
+}
+
 /* end Styling */
