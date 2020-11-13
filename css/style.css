@@ -41,6 +41,10 @@ nav, header, main, footer {
   list-style-type: none;
 }
 
+.inline-block {
+  display: inline-block
+}
+
 .selector-type-1 {
   border: none;
   background: transparent;
@@ -129,10 +133,6 @@ nav, header, main, footer {
   line-height: 100px;
 }
 
-.website-nav ul li {
-  display: inline-block;
-}
-
 .website-nav .globe-img img, .website-nav .search-img img {
   height: 20px;
   width: 20px;
@@ -148,21 +148,19 @@ nav, header, main, footer {
 }
 
 .website-nav-right ul li {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .website-nav .website-nav-right .login-button {
   width: 70px;
   height: 45px;
   line-height: 45px;
-  display: inline-block;
 }
 
 .website-nav .website-nav-right .gethubspotfree-button {
   width: 140px;
   height: 45px;
   line-height: 45px;
-  display: inline-block;
 }
 
 header > .home-nav {
@@ -171,8 +169,7 @@ header > .home-nav {
 }
 
 header > .home-nav .home-nav-right ul li {
-  display: inline-block;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 header > .jumbotron-container {
@@ -268,8 +265,7 @@ main > .hubspot-presentation .wide-block .wide-block-right h4::after{
 }
 
 main > .hubspot-presentation .wide-block .wide-block-right ul li {
-  display: inline-block;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 main > .hubspot-presentation .wide-column {
@@ -304,13 +300,12 @@ main > .hubspot-presentation .wide-column .wide-column-content .checked-list {
   text-align: left;
 }
 
-main > .hubspot-presentation .wide-column .wide-column-content .checked-list li {
+main > .hubspot-presentation .wide-column .wide-column-content .checked-list ul li {
   margin-left: 30px;
 }
 
 main > .hubspot-presentation .wide-column .wide-column-content .learn-more-button {
   margin-top: 60px;
-  display: inline-block;
 }
 
 main > .hubspot-community {
@@ -352,14 +347,13 @@ main > .hubspot-community .grid-container .grid-block img {
 
 main > .hubspot-community .grid-container .grid-block h2 {
   font-size: 40px;
-  display: inline-block;
   padding: 20px 0;
 }
 
 main > .hubspot-community .grid-container .grid-block span {
   font-size: 27px;
   vertical-align: 4px;
-  padding-left: 3px;
+  margin-left: 3px;
 }
 
 main > .hubspot-community .grid-container .grid-block-description {
@@ -438,7 +432,8 @@ main > .hubspot-affiliate .hubspot-grow-right img {
 
 footer {
   background-color: #2D3E50;
-  height: 600px;
+  height: 700px;
+  color: #cbd6e2;
 }
 
 footer > .useful-links {
@@ -470,5 +465,24 @@ footer > .useful-links .footer-column:last-child .button-type-3 {
 
 footer > .useful-links .footer-column:last-child li:last-child i{
   margin-right: 25px;
+}
+
+footer .lang-picker {
+  border-bottom: 1px solid #cbd6e2;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 40px;
+}
+
+footer .lang-picker ul li {
+  margin-right: 30px;
+}
+
+footer .credits .copyright {
+  margin-top: 5px;
+}
+
+footer .credits .privacy ul li {
+  margin-right: 20px;
 }
 /* end Styling */
