@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
   color: #33475B;
 }
 
@@ -310,6 +309,7 @@ main > .hubspot-presentation .wide-column .wide-column-content .learn-more-butto
 main > .hubspot-community {
   background-color: #00ABB7;
   height: 850px;
+  margin-bottom: 50px;
 }
 
 main > .hubspot-community .container > h2 {
@@ -357,5 +357,40 @@ main > .hubspot-community .grid-container .grid-block span {
 
 main > .hubspot-community .grid-container .grid-block-description {
   padding-bottom: 40px;
+}
+
+main > .hubspot-affiliate .customers-affiliate {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+main > .hubspot-affiliate .customers-affiliate .total-customers {
+  width: 20%;
+}
+
+main > .hubspot-affiliate .customers-affiliate .affiliates {
+  width: 60%;
+}
+
+main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo {
+  width: 25%;
+  height: 60px;
+  line-height: 60px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo:nth-child(-n+2), main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo:nth-child(6n+0) {
+  height: 39px;
+  line-height: 39px;
+}
+
+main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+main > .hubspot-affiliate .customers-affiliate .affiliates .affiliate-logo:nth-child(7n+0) img {
+  width: 80%;
 }
 /* end Styling */
