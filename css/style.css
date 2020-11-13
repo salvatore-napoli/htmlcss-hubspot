@@ -73,6 +73,13 @@ nav, header, main, footer {
   text-align: center;
 }
 
+.button-type-3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2D3E50;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .learn-more-button {
   width: 180px;
   height: 70px;
@@ -359,6 +366,10 @@ main > .hubspot-community .grid-container .grid-block-description {
   padding-bottom: 40px;
 }
 
+main > .hubspot-affiliate {
+  margin-bottom: 50px;
+}
+
 main > .hubspot-affiliate .customers-affiliate {
   margin: 0 auto 100px;
   width: 1050px;
@@ -366,6 +377,10 @@ main > .hubspot-affiliate .customers-affiliate {
 
 main > .hubspot-affiliate .customers-affiliate .total-customers {
   width: 20%;
+}
+
+main > .hubspot-affiliate .customers-affiliate .total-customers h2 {
+  font-size: 50px;
 }
 
 main > .hubspot-affiliate .customers-affiliate .affiliates {
@@ -419,5 +434,41 @@ main > .hubspot-affiliate .hubspot-grow-right {
 main > .hubspot-affiliate .hubspot-grow-right img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  background-color: #2D3E50;
+  height: 600px;
+}
+
+footer > .useful-links {
+  padding: 50px 0;
+}
+
+footer > .useful-links .footer-column {
+  width: calc(100% / 4 - (5px / 4 * 3));
+}
+
+footer > .useful-links .footer-column:nth-child(-n+3) {
+  margin-right: 5px;
+}
+
+footer > .useful-links .footer-column h5 {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+footer > .useful-links ul li {
+  margin-bottom: 25px;
+}
+
+footer > .useful-links .footer-column:last-child .button-type-3 {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+footer > .useful-links .footer-column:last-child li:last-child i{
+  margin-right: 25px;
 }
 /* end Styling */
