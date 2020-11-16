@@ -41,23 +41,19 @@ nav, header, main, footer {
   list-style-type: none;
 }
 
+.no-decoration-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .inline-block {
   display: inline-block
 }
 
-.selector-type-1 {
+.selector {
   border: none;
   background: transparent;
   font-size: 16px;
-  color: inherit;
-  font-weight: inherit;
-}
-
-.selector-type-2 {
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  padding-right: 15px;
   color: inherit;
   font-weight: inherit;
 }
@@ -131,15 +127,21 @@ nav, header, main, footer {
   border-bottom: 1px solid black;
   height: 100px;
   line-height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
 }
 
-.website-nav .globe-img img, .website-nav .search-img img {
-  height: 20px;
-  width: 20px;
-  vertical-align: -2px;
+.website-nav .fa.fa-globe {
+  font-size: 18px;
 }
 
-.website-nav .website-nav-left ul li:nth-child(2)::after {
+.website-nav-right ul li {
+  padding-right: 20px;
+}
+
+.website-nav .website-nav-left ul li:first-child::after {
   content: '';
   display: inherit;
   height: 23px;
@@ -147,9 +149,21 @@ nav, header, main, footer {
   margin: -5px 25px;
 }
 
-.website-nav-right ul li {
-  margin-right: 20px;
+.website-nav-right .fa.fa-search {
+  color: #00ABB7;
+  font-size: 18px;
 }
+
+/* Per prova */
+.website-nav-right .searchbar {
+  display: none;
+}
+
+.website-nav-right .fa.fa-search:hover + .searchbar {
+  display: inline;
+  pointer-events: none;
+}
+/* end Per prova */
 
 .website-nav .website-nav-right .login-button {
   width: 70px;
@@ -166,10 +180,20 @@ nav, header, main, footer {
 header > .home-nav {
   height: 100px;
   line-height: 100px;
+  margin-top: 100px;
+}
+
+header > .home-nav .hubspot-logo {
+  position: relative;
+  top: 5px;
 }
 
 header > .home-nav .home-nav-right ul li {
-  margin-right: 20px;
+  padding-right: 20px;
+}
+
+header > .home-nav .home-nav-right ul li .fa.fa-chevron-down {
+  padding-left: 15px;
 }
 
 header > .jumbotron-container {
@@ -204,8 +228,11 @@ h1, header > .jumbotron-container .jumbotron-background-container .jumbotron .ju
   margin-bottom: 35px;
 }
 
-header > .divider {
+header::after {
+  content: '';
   height: 100px;
+  width: 100%;
+  position: absolute;
   background-color: #AFEBE4;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -222,7 +249,7 @@ main > .hubspot-presentation .main-presentation {
 }
 
 main > .hubspot-presentation .main-presentation .main-presentation-content {
-  padding-top: 40px;
+  padding-top: 150px;
 }
 
 main > .hubspot-presentation .wide-block {
@@ -245,6 +272,7 @@ main > .hubspot-presentation .wide-block .learn-more-button {
   position: relative;
   left: 30%;
   margin-top: 20px;
+  display: block;
 }
 
 main > .hubspot-presentation .wide-block .wide-block-right {
@@ -265,7 +293,13 @@ main > .hubspot-presentation .wide-block .wide-block-right h4::after{
 }
 
 main > .hubspot-presentation .wide-block .wide-block-right ul li {
-  margin-right: 10px;
+  padding-right: 10px;
+}
+
+main > .hubspot-presentation .wide-block .wide-block-right .fa.fa-check-circle {
+  color: #FF7A59;
+  padding-right: 10px;
+  font-size: 18px;
 }
 
 main > .hubspot-presentation .wide-column {
@@ -298,18 +332,16 @@ main > .hubspot-presentation .wide-column .wide-column-content p::after {
 main > .hubspot-presentation .wide-column .wide-column-content .checked-list {
   list-style-image: url("../img/check-orange.png");
   text-align: left;
-}
-
-main > .hubspot-presentation .wide-column .wide-column-content .checked-list ul li {
-  margin-left: 30px;
+  padding-left: 25px;
 }
 
 main > .hubspot-presentation .wide-column .wide-column-content .learn-more-button {
-  margin-top: 60px;
+  display: block;
+  margin: 60px auto;
 }
 
 main > .hubspot-community {
-  background-color: #00ABB7;
+  background: linear-gradient(45deg,#00a4bd,#00bda5);
   height: 850px;
   margin-bottom: 50px;
 }
@@ -325,38 +357,39 @@ main > .hubspot-community p {
   margin: 0 auto 50px;
 }
 
-main > .hubspot-community .grid-container .grid-block {
+main > .hubspot-community .grid-row .grid-block {
   width: 25%;
 }
 
-main > .hubspot-community .grid-container .grid-block:nth-child(-n+4) {
-  border-bottom: 1px solid white;
-}
-
-main > .hubspot-community .grid-container .grid-block:nth-child(n+0) {
+main > .hubspot-community .grid-row .grid-block.right-bordered {
   border-right: 1px solid white;
 }
 
-main > .hubspot-community .grid-container .grid-block:nth-child(4n+4) {
-  border-right: none;
+main > .hubspot-community .grid-row .grid-block.top-right-bordered {
+  border-top: 1px solid white;
+  border-right: 1px solid white;
 }
 
-main > .hubspot-community .grid-container .grid-block img {
+main > .hubspot-community .grid-row .grid-block.top-bordered {
+  border-top: 1px solid white;
+}
+
+main > .hubspot-community .grid-row .grid-block img {
   padding-top: 25px;
 }
 
-main > .hubspot-community .grid-container .grid-block h2 {
+main > .hubspot-community .grid-row .grid-block h2 {
   font-size: 40px;
   padding: 20px 0;
 }
 
-main > .hubspot-community .grid-container .grid-block span {
+main > .hubspot-community .grid-row .grid-block span {
   font-size: 27px;
   vertical-align: 4px;
-  margin-left: 3px;
+  padding-left: 3px;
 }
 
-main > .hubspot-community .grid-container .grid-block-description {
+main > .hubspot-community .grid-row .grid-block-description {
   padding-bottom: 40px;
 }
 
@@ -412,6 +445,7 @@ main > .hubspot-affiliate .hubspot-grow-left .button-type-2 {
   height: 65px;
   line-height: 65px;
   margin-bottom: 40px;
+  display: block;
 }
 
 main > .hubspot-affiliate .hubspot-grow-left span {
@@ -461,28 +495,29 @@ footer > .useful-links .footer-column:last-child .button-type-3 {
   width: 200px;
   height: 50px;
   line-height: 50px;
+  display: block;
 }
 
 footer > .useful-links .footer-column:last-child li:last-child i{
-  margin-right: 25px;
+  padding-right: 25px;
 }
 
-footer .lang-picker {
+footer > .lang-picker {
   border-bottom: 1px solid #cbd6e2;
   height: 70px;
   line-height: 70px;
   margin-bottom: 40px;
 }
 
-footer .lang-picker ul li {
-  margin-right: 30px;
+footer > .lang-picker ul li {
+  padding-right: 30px;
 }
 
-footer .credits .copyright {
+footer > .credits .copyright {
   margin-top: 5px;
 }
 
-footer .credits .privacy ul li {
-  margin-right: 20px;
+footer > .credits .privacy ul li {
+  padding-right: 20px;
 }
 /* end Styling */
